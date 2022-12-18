@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+    <title>Document</title>
+</head>
+<body>
+    <div class="main">
+    <section class="paint">
+    <div class="menu-bar">
+        <div class="menu-bar-title">
+            <img src="./images/menu-icon.png" />
+            <span class="title-menu-bar">untitled - Paint</span>
+        </div>
+        <div class="window-control-menu-bar">
+            <div class="minimize">_</div>
+            <div class="maximize">⧠</div>
+            <div class="maximize">x</div>
+        </div>
+    </div>
+    <div class="menu-control-bar">
+        <ul>
+            <li>File</li>
+            <li>Edit</li>
+            <li>View</li>
+            <li>Image</li>
+            <li>Options</li>
+            <li>Help</li>
+        </ul>
+    </div>
+    
+    <div class="container">
+        <section class="tools-board">
+            <div class="row">
+                <div class="controls-canva">
+                    <ul class="options">
+                        <li class="option tool" id="star">
+                            <img src="icons/star.png" alt=""> 
+                        </li>
+                        <li class="option tool" id="eraser">
+                            <img src="icons/eraser.png" alt="">
+                        </li>
+                        <li class="option tool" id="drop">                   
+                            <input id="color-picker" type="color" class="hidden-color-" value="#4a98f7">
+                            <img src="icons/drop.png" class="eyedropper" alt="">
+                        </li>
+                        <li class="option tool active" id="pencil">
+                            <img src="icons/pencil.png" alt="">
+                        </li>
+                        <li class="option tool" id="spray">
+                            <img src="icons/spray.png" alt="">
+                        </li>
+                        <li class="option tool" id="line">
+                            <img src="icons/line.png" alt="">
+                        </li>
+                        <li class="option tool" id="rectangle">
+                            <img src="icons/rectangle.png" alt="">
+                        </li>
+                        <li class="option tool" id="circle">
+                            <img src="icons/circle.png" alt="">
+                        </li>
+                        <!-- <li class="option">
+                            <input type="checkbox" id="fill-color">
+                            <label for="fill-color">Fill cikir</label>
+                        </li> -->
+          
+                        <li class="option tool" id="rectangle2">
+                            <img src="icons/rectangle2.png" alt="">
+                        </li>
+                        <li class="option tool" id="bucket">
+                            <img src="icons/bucket.png" alt="">
+                        </li>
+                        <li class="option tool" id="magn">
+                            <img src="icons/magn.png" alt="">
+                        </li>
+                        <li class="option tool" id="brush">
+                            <img src="icons/brush.png" alt="">
+                        </li>
+                        <li class="option tool" id="text">
+                            <img src="icons/text.png" alt="">
+                        </li>
+                        <li class="option tool" id="curvyline">
+                            <img src="icons/curvyline.png" alt="">
+                        </li>
+                        <li class="option tool" id="polygon">
+                            <img src="icons/polygon.png" alt="">
+                        </li>
+                        <li class="option tool" id="recborder">
+                            <img src="icons/recborder.png" alt="">
+                        </li>
+                    </ul>
+               </div>
+            </div>
+            <div class="row-blank">
+                <!-- <label for="" class="title">options</label>
+                <ul class="options">
+                    <li class="option active tool" id="brush2">
+                        <img src="icons/brush.svg" alt="">
+                        <span>brus</span>
+                    </li>
+                    <li class="option tool" id="eraser2">
+                        <img src="icons/eraser.svg" alt="">
+                        <span>era</span>
+                    </li>
+
+                    <li class="option">
+                        <input type="range" id="size-slider" min="1" max="30" value="5">
+                    </li>
+                </ul> -->
+            </div>
+
+        </section>
+        <section class="drawing-board">
+            <canvas></canvas>
+        </section>
+    </div>
+    <div id="color-container" class="row colors">
+        <div class="box-double-color">
+            <div class="front-color"></div>
+            <div class="back-color"></div>
+        </div>
+        <ul class="options ">
+            <li class="option selected"></li>
+            <li class="option"></li>
+            <li class="option"></li>
+            <li class="option"></li>
+            <li class="option"></li>
+            <li class="option"></li>
+            <li class="option"></li>
+            <li class="option"></li>
+            <li class="option"></li>
+            <li class="option"></li>
+            <li class="option"></li>
+            <li class="option"></li>
+            <li class="option"></li>
+            <li class="option"></li>
+            <li class="option"></li>
+            <li class="option"></li>
+            <li class="option"></li>
+            <li class="option"></li>
+            <li class="option"></li>
+            <li class="option"></li>
+            <li class="option"></li>
+            <li class="option"></li>
+            <li class="option"></li>
+            <li class="option"></li>
+            <li class="option"></li>
+            <li class="option"></li>
+            <li class="option"></li>
+            <li class="option"></li>
+        </ul>
+    </div>
+  
+    </section>
+    <section class="foot-buttons">
+        <div class="winCl-wrap">
+            <input id="clear-canvas" class="winCl-btn clear" type="button" value="Clear image" />
+        </div> 
+        <div class="winCl-wrap">
+            <input id="save-image"  class="winCl-btn" type="button" value="Save image" />
+        </div>
+    </section>
+</div>
+</body>
+</html>
